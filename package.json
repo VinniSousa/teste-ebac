@@ -1,0 +1,23 @@
+{
+  "name": "teste-ebac",
+  "version": "1.0.0",
+  "description": "Repositório automação e teste módulo 10",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinniSousa/teste-ebac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinniSousa/teste-ebac/issues"
+  },
+  "homepage": "https://github.com/VinniSousa/teste-ebac#readme",
+  "dependencies": {
+    "cypress": "^10.9.0"
+  }
+}
