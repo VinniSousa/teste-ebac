@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/VinniSousa/teste-ebac#readme",
   "dependencies": {
-    "cypress": "^10.9.0"
+    "@faker-js/faker": "^7.5.0",
+    "cypress": "^10.9.0",
+    "faker": "^5.5.3"
   }
 }
