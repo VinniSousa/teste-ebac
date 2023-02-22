@@ -1,4 +1,6 @@
 /// <reference types="cypress" />
+import enderecoPages from '../../support/pages-objects/endereco.pages';
+import EnderecoPages from '../../support/pages-objects/endereco.pages'
 
 describe('Funcionalidade Enredeços - Faturamento e Entrega', () => {
     beforeEach(() => {
@@ -9,7 +11,7 @@ describe('Funcionalidade Enredeços - Faturamento e Entrega', () => {
     });
 
 
-    it('Deve fazer cadastro de faturamento com sucesso', () => {
-       
+    it.only('Deve fazer cadastro de faturamento com sucesso', () => {
+       enderecoPages.editarEnderecoFaturamento('nome','sobrenome','ebac','Brasil','Av. Teste','123','Curitiba','Paraná','82590-300','080000000','teste@teste.com.br')
     });
 });
