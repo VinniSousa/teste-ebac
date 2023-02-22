@@ -4,7 +4,8 @@
   "description": "Repositório automação e teste módulo 10",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:report": "npx cypress run --browser chrome --record --key 79902975-cbd8-4a0b-b774-0cd051a4a405"
   },
   "repository": {
     "type": "git",
