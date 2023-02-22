@@ -19,12 +19,16 @@ describe('Funcionalidade Página de produtos', () => {
         var quant=5
 
         cy.get('[class="product-block grid"]')
-        .contains('Ajax Full-Zip Sweatshirt').click()
+        .contains('Aero Daily Fitness Tee').click()
         cy.get('.button-variable-item-M').click()
         cy.get('.button-variable-item-Green').click()
         cy.get('.input-text').clear().type(quant)
         cy.get('.single_add_to_cart_button').click()
         cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quant)
         cy.get('.woocommerce-message').should('contain', quant + ' × “Ajax Full-Zip Sweatshirt”')
+    });
+
+    it('Deve adicionar produtos no carrinho usando comando customizado', () => {
+        cy.addProdutos('Aether Gym Pant', 34, 'Blue', 6)
     });
 });

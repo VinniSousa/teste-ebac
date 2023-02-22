@@ -24,4 +24,10 @@ describe('Funcionalidade Pré Cadastro', () => {
 
     });
 
+    it.only('Deve completar o pré-cadastros com sucesso usando Comandos Customaziados', () => {
+        let nomeFaker = faker.name.firstName()
+        let emailFakerCustom = faker.internet.email(nomeFaker)
+        cy.preCadastro(emailFakerCustom,'senha!@#forte','Vinicius','Sousa')
+    });
+
     });
